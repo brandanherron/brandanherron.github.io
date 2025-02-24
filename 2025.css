@@ -1,0 +1,140 @@
+/* style.css */
+
+/* Basic Reset & Typography */
+html, body {
+    padding: 0;
+    margin: 0;
+    color: #555;
+    font-family: "Open Sans", sans-serif; /* Change to your desired font */
+    font-size: 14px;
+    background-color: #f9f9f9;
+    letter-spacing: 0.1em; /* Increase spacing between letters */
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.3em;
+    margin-top: 1em;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 0 0 1em 2em;
+}
+
+/* Link Styling */
+a:hover,
+a:visited,
+a:active,
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Blinking Cursor Keyframes */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blinking-cursor {
+    animation: blink 0.8s step-end infinite;
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1em;
+}
+
+/* Content Section */
+.content {
+    font-size: 1em;
+    line-height: 1.6em;
+    max-width: 700px;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Navigation */
+#navigation {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#navigation ul {
+    padding: 0;
+    margin: 0 auto;
+}
+
+#navigation ul li {
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0 0.5em;
+}
+
+#navigation ul li:hover {
+    color: #00BFFF;
+}
+
+/* Link Colors by ID */
+#SMC {
+  color: #00a2ff !important;
+}
+
+#compton {
+  color: #f8ba00 !important;
+}
+
+#scholarship {
+  color: #0076ba !important;
+}
+
+#linkedin {
+  color: #2867B2 !important;
+}
+
+#github {
+  color: #000000 !important;
+}
+
+#snap {
+  color: #e1e100 !important;
+}
+
+#nasa {
+  color: #0B3D91 !important;
+}
+
+#email {
+  color: #FF6600 !important;
+}
+
+/* Additional hover effect for in-text links */
+#home a:hover,
+#experience a:hover,
+#additional a:hover {
+    opacity: 0.7;
+}
