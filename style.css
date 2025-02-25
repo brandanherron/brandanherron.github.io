@@ -1,0 +1,174 @@
+/* 2025.css */
+
+/* Basic Reset & Typography */
+/* Remove default margins and paddings; set base text styles */
+html, body {
+    padding: 0;                  /* Remove default padding */
+    margin: 0;                   /* Remove default margin */
+    color: #555;                 /* Set default text color */
+    font-family: "Open Sans", sans-serif;  /* Use Open Sans font */
+    font-size: 16px;             /* Increase base font size for readability */
+    background-color: #f9f9f9;   /* Set background color for the page */
+  }
+  
+  /* Heading styles for h1, h2, and h3 */
+  h1, h2, h3 {
+    font-weight: 300;            /* Light font weight for headings */
+    margin-top: 0;               /* Remove top margin */
+    letter-spacing: 0.05em;       /* Subtle spacing between letters */
+  }
+  
+  h1 {
+    font-size: 3em;              /* Large font size for main heading */
+    text-align: center;          /* Center align the main heading */
+  }
+  
+  h2 {
+    font-size: 2em;              /* Font size for subheadings */
+    margin-bottom: 0.5em;        /* Space below h2 elements */
+  }
+  
+  h3 {
+    font-size: 1.4em;            /* Smaller font size for h3 elements */
+    margin-bottom: 0.3em;        /* Space below h3 elements */
+    margin-top: 1em;             /* Space above h3 elements */
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: disc;       /* Use disc bullets for lists */
+    margin: 0 0 1em 2em;         /* Set margin for list items */
+  }
+  
+  /* Link Styling */
+  /* Remove underlines and inherit text color for all link states */
+  a:hover,
+  a:visited,
+  a:active,
+  a:link {
+    color: inherit;             /* Inherit parent color */
+    text-decoration: none;      /* Remove text underline */
+  }
+  
+  /* Blinking Cursor Animation */
+  /* Define keyframes for blinking effect */
+  @keyframes blink {
+    0% { opacity: 1; }          /* Fully visible at start */
+    50% { opacity: 0; }         /* Invisible in the middle */
+    100% { opacity: 1; }        /* Fully visible at end */
+  }
+  
+  /* Apply blinking animation to elements with the class "blinking-cursor" */
+  .blinking-cursor {
+    animation: blink 0.8s step-end infinite;
+  }
+  
+  /* Container styling */
+  /* Center container and set a maximum width */
+  .container {
+    margin: 0 auto;              /* Center the container */
+    max-width: 1200px;           /* Maximum width */
+    padding: 1em;                /* Padding around the container */
+  }
+  
+  /* Content section styling */
+  /* Style individual content blocks */
+  .content {
+    font-size: 1em;              /* Use base font size */
+    line-height: 1.6em;          /* Increase line height for readability */
+    max-width: 700px;            /* Limit content width for better reading */
+    margin: 2em auto;            /* Center content with vertical spacing */
+    background-color: #fff;      /* White background for content areas */
+    padding: 2em;                /* Padding inside content blocks */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);  /* Subtle drop shadow */
+    border-radius: 8px;          /* Rounded corners for a modern look */
+  }
+  
+  /* Navigation styling */
+  #navigation {
+    font-size: 1em;              /* Base font size for navigation */
+    text-transform: uppercase;   /* Uppercase text for navigation items */
+    font-weight: bold;           /* Bold font for navigation */
+    text-align: center;          /* Center align navigation text */
+    margin-bottom: 1em;          /* Space below the navigation menu */
+  }
+  
+  /* Navigation list styling */
+  #navigation ul {
+    padding: 0;                  /* Remove padding from list */
+    margin: 0 auto;              /* Center the list */
+  }
+  
+  /* Navigation list item styling */
+  #navigation ul li {
+    display: inline-block;       /* Display items inline */
+    padding: 0.5em;              /* Padding around each navigation item */
+    margin: 0 0.5em;             /* Horizontal spacing between items */
+    transition: color 0.3s ease; /* Smooth transition for hover color change */
+  }
+  
+  /* Hover effect for navigation items */
+  #navigation ul li:hover {
+    color: #00BFFF;             /* Change text color on hover */
+  }
+  
+  /* Specific link color overrides using element IDs */
+  #SMC {
+  color: #00a2ff !important;
+  }
+  
+  #compton {
+  color: #f8ba00 !important;
+  }
+  
+  #scholarship {
+  color: #0076ba !important;
+  }
+  
+  #linkedin {
+  color: #2867B2 !important;
+  }
+  
+  #github {
+  color: #000000 !important;
+  }
+  
+  #snap {
+  color: #e1e100 !important;
+  }
+  
+  #nasa {
+  color: #0B3D91 !important;
+  }
+  
+  #email {
+  color: #FF6600 !important;
+  }
+  
+  /* Additional hover effect for in-text links within specific sections */
+  #home a:hover,
+  #experience a:hover,
+  #additional a:hover {
+    opacity: 0.7;               /* Reduce opacity on hover for a subtle effect */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+  }
+  
+  /* Responsive Design for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .container {
+        padding: 0.5em;         /* Reduce container padding on small screens */
+    }
+    .content {
+        padding: 1em;           /* Reduce content block padding on small screens */
+    }
+    h1 {
+        font-size: 2.5em;       /* Adjust main heading size for smaller screens */
+    }
+    h2 {
+        font-size: 1.8em;       /* Adjust h2 size */
+    }
+    h3 {
+        font-size: 1.3em;       /* Adjust h3 size */
+    }
+  }
+  
